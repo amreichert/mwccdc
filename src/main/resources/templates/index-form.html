@@ -1,5 +1,10 @@
 <html>
 <body>
 	<p> Hello Spring Boot </p>
+	<p>[[${message}]]</p>
+	
+	<p>[[${user.name}]]</p>
+	<p><span th:text="${user.name}"></span></p>
+	<p><th:block th:text="${user.name}"></th:block></p>
 </body>
 </html>
